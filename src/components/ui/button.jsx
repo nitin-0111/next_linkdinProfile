@@ -19,7 +19,8 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        linkdin:"mx-1 rounded-full border border-input bg-background shadow-sm hover:bg-green-400 hover:text-accent-foreground"
+        linkdin:"mx-1 rounded-full border border-input bg-background shadow-sm hover:bg-blue-400 hover:text-accent-foreground",
+        linkdin_select:"mx-1 decoration-white rounded-full border border-input bg-blue-600 shadow-sm hover:bg-blue-300 hover:text-accent-foreground"
       },
       size: {
         default: "h-9 px-4 py-2",

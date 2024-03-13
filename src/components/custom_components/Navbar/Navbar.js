@@ -21,8 +21,8 @@ function Navbar() {
                     <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="logoss" />
                     <div className="header__search">
                         <SearchIcon />
-                        {/* <Input/> */}
-                        <input placeholder="Search" type="text" />
+                       
+                        <input placeholder="Search" type="text" className="h-120"/>
                     </div>
                 </div>
 

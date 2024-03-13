@@ -1,16 +1,20 @@
-.container .header {
+.container {
+  margin: 20px;
+  max-width: 100%;
+}
+.container .header_education {
   display: flex;
 }
-.container .header .company_logo {
+.container .header_education .company_logo {
   flex: 1;
 }
-.container .header .description {
+.container .header_education .description {
   flex: 11;
 }
-.container .header .description h4 {
+.container .header_education .description h4 {
   font-size: large;
   font-weight: 600;
 }
-.container .header .description .location_details {
+.container .header_education .description .location_details {
   color: rgb(96, 85, 85);
 }/*# sourceMappingURL=education.css.map */

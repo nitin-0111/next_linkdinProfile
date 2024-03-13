@@ -1,16 +1,14 @@
 .container {
 
-  // margin-top: 5%;
-  // max-width: 80vw;
-  // margin-left:10vw;
  background-color: #F4F2EE;
   .header-img {
     // border: solid black 5px;
     position: relative;
     margin-top: 0px;
     .cover-img {
+      position: relative;
       width: 100%;
-      border-radius: 5%;
+      border-radius: 2%;
       overflow: hidden;
       img {
         object-fit: cover;
@@ -21,8 +19,8 @@
       height: 10rem;
       border: solid white 5px;
       border-radius: 50%;
-      top:170px;
-      // position: absolute;
+      top:-80px;
+      position: relative;
       overflow: hidden;
      
       margin-left: 10px;
@@ -36,6 +34,13 @@
   }
   .user-info{
     margin-top: 50px;
+   
+  }
+  #bio{
+    width: 100%;
+  }
+  #name{
+    width: 30%;
   }
   // background-color: red;
 }

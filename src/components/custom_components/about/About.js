@@ -6,19 +6,58 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
- const About = () => {
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import { Button } from "@/components/ui/button";
+import EditIcon from '@mui/icons-material/Edit';
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+const About = ({ about }) => {
+  const { desc } = about;
   return (
     <>
       <div className="container">
 
         <Card>
-          <CardHeader> <CardTitle>About</CardTitle> </CardHeader>
+          <CardHeader>
+            <div className="header_about flex justify-between">
+              <CardTitle>About</CardTitle>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="linkdin"> <EditIcon /> </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-[60vw] max-h-[50vh]">
+                  <DialogHeader>
+                    <DialogTitle>Edit About</DialogTitle>
+                    <DialogDescription> edit your profile About section: </DialogDescription>
+                  </DialogHeader>
+
+
+                  <div className="edit_container">
+
+
+                    <div className="grid grid-cols-4 items-center gap-4">
+                      <Label htmlFor="bio" className="text-right">
+                        About*
+                      </Label>
+                      <Textarea id="bio" placeholder={desc} className="w-[300%] h-[160%]" />
+                    </div>
+                  </div>
+                  <DialogFooter >
+                    <Button variant="linkdin" className="my-3">Save changes</Button>
+                  </DialogFooter>
+                </DialogContent>
+              </Dialog>
+            </div> </CardHeader>
           <CardContent>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam molestiae nostrum voluptatibus enim tempore assumenda magni doloremque omnis nam dolorum, delectus cum? Explicabo ex inventore, est sunt dolores corrupti? Provident.
-              Ducimus laudantium error earum nisi quisquam, laboriosam quod rerum porro minima voluptatibus vel. Laborum dolorem velit animi neque accusantium optio exercitationem nisi. Quas repellendus nostrum omnis veniam odit accusantium eum!
-              Ullam nostrum earum a quia soluta dicta doloremque! Esse iusto commodi temporibus earum inventore neque nesciunt, beatae ipsum aspernatur quo suscipit cupiditate unde ex, aliquid ipsam possimus voluptate quas eligendi.
-              Libero at, explicabo optio id eaque earum tenetur amet quibusdam, adipisci voluptatibus, enim rem. Impedit error debitis hic ipsa facilis nisi? Quibusdam obcaecati vitae in fugit laboriosam? Ad, consectetur enim?
-            </p>
+            <p> {desc}</p>
           </CardContent>
         </Card>
       </div>
