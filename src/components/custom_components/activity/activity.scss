@@ -1,0 +1,13 @@
+.container {
+  .post_details {
+    display: flex;
+    margin-right: 5px;
+    img {
+      
+      width: auto;
+      height: auto;
+      max-width: 80px;
+      max-height: 80px;
+    }
+  }
+}

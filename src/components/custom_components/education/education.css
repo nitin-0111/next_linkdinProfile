@@ -1,0 +1,16 @@
+.container .header {
+  display: flex;
+}
+.container .header .company_logo {
+  flex: 1;
+}
+.container .header .description {
+  flex: 11;
+}
+.container .header .description h4 {
+  font-size: large;
+  font-weight: 600;
+}
+.container .header .description .location_details {
+  color: rgb(96, 85, 85);
+}/*# sourceMappingURL=education.css.map */

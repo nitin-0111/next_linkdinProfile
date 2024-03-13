@@ -1,0 +1,10 @@
+.container .post_details {
+  display: flex;
+  margin-right: 5px;
+}
+.container .post_details img {
+  width: auto;
+  height: auto;
+  max-width: 80px;
+  max-height: 80px;
+}/*# sourceMappingURL=activity.css.map */

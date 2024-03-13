@@ -1,0 +1,28 @@
+.container {
+   
+ 
+   .header{
+    display: flex;
+     .company_logo{
+        flex:1;
+     }
+     .description{
+        flex:11;
+        h4{
+            font-size: large;
+            font-weight: 600;
+        }
+        .location_details{
+           color: rgb(96, 85, 85);
+        }
+        .descriptionProfile{
+
+        }
+     }
+   }
+
+
+      
+    
+  
+}

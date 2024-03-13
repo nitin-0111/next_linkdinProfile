@@ -1,0 +1,41 @@
+.container {
+
+  // margin-top: 5%;
+  // max-width: 80vw;
+  // margin-left:10vw;
+ background-color: #F4F2EE;
+  .header-img {
+    // border: solid black 5px;
+    position: relative;
+    margin-top: 0px;
+    .cover-img {
+      width: 100%;
+      border-radius: 5%;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+      }
+    }
+    .profile-img {
+      width: 10rem;
+      height: 10rem;
+      border: solid white 5px;
+      border-radius: 50%;
+      top:170px;
+      // position: absolute;
+      overflow: hidden;
+     
+      margin-left: 10px;
+
+      img {
+        width: 100%; /* Set the image width to 100% of the container */
+        height: 100%; /* Set the image height to 100% of the container */
+        object-fit: cover;
+      }
+    }
+  }
+  .user-info{
+    margin-top: 50px;
+  }
+  // background-color: red;
+}
